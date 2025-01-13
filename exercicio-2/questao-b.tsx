@@ -8,7 +8,6 @@
 // genericamente de uma classe que você já tenha familiaridade. (1 PONTO)
 
 async function insertProduct(name: string, value: number): Promise<number | null> {
-
   const queryInsert = `
     INSERT INTO Produto (name, value)
     VALUES (?, ?)
@@ -17,7 +16,6 @@ async function insertProduct(name: string, value: number): Promise<number | null
 
   try {
     const result = await createQuery(queryInsert, [name, value]);
-
     return result.codigo;
   } catch (error) {
     console.error('Erro ao inserir produto:', error);

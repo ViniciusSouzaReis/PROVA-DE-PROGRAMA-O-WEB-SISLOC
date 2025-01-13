@@ -10,11 +10,11 @@ CREATE TABLE Produto (
 );
 
 CREATE TABLE ProdutoDesconto (
-    codigo INT NOT NULL,
-    quantidade INT NOT NULL,
-    valor DECIMAL(*, 2) NOT NULL,
-    PRIMARY KEY (codigo, quantidade),
-    FOREIGN KEY (codigo) REFERENCES Produto(codigo) ON DELETE CASCADE
+  codigo INT NOT NULL,
+  quantidade INT NOT NULL,
+  valor DECIMAL(*, 2) NOT NULL,
+  PRIMARY KEY (codigo, quantidade),
+  FOREIGN KEY (codigo) REFERENCES Produto(codigo) ON DELETE CASCADE
 );
 
 --Resposta:

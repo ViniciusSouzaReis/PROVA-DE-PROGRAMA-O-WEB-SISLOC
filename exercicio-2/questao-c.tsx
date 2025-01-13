@@ -8,9 +8,9 @@ async function insertProductDiscount(
   value: number
 ): Promise<{ codigo: number; quantidade: number; valor: number } | null> {
   const queryInsert = `
-      INSERT INTO ProdutoDesconto (codigo, quantidade, valor)
-      VALUES (?, ?, ?)
-      RETURNING codigo, quantidade, valor;
+    INSERT INTO ProdutoDesconto (codigo, quantidade, valor)
+    VALUES (?, ?, ?)
+    RETURNING codigo, quantidade, valor;
   `;
 
   try {

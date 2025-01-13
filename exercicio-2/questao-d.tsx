@@ -9,7 +9,6 @@ async function insertProductAndDiscounts(
   productName: string = "Kit de Bolinhos do Chef Bolão"
 ): Promise<Boolean> {
   try {
-    
     const productCode = await insertProduct(productName, FIRST_CONDITION_UNITY_PRICE);
     if (!productCode) {
       throw new Error("Failed to insert product.");
