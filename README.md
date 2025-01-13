@@ -1,6 +1,6 @@
 # PROVA-DE-PROGRAMA-O-WEB-SISLOC
 
-#INSTRUÇÕES
+# INSTRUÇÕES
 • Escreva tudo o mais organizado possível.
 • IMPORTANTÍSSIMO: NÃO estamos interessados e nem queremos o programa final, ou
 seja, não queremos o seu projeto todo. Queremos somente as funções que foram
