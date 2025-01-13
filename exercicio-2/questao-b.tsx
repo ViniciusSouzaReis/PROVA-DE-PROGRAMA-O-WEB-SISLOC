@@ -18,7 +18,7 @@ async function insertProduct(name: string, value: number): Promise<number | null
   try {
     const result = await createQuery(queryInsert, [name, value]);
 
-    return result.rows[0]?.codigo || null;
+    return result.codigo;
   } catch (error) {
     console.error('Erro ao inserir produto:', error);
     return null;

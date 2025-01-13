@@ -16,7 +16,7 @@ async function insertProdutoDesconto(
   try {
     const result = await createQuery(queryInsert, [code, quantity, value]);
 
-    return result.rows[0] || null;
+    return result;
   } catch (error) {
     console.error('Erro ao inserir produto desconto:', error);
     return null;
