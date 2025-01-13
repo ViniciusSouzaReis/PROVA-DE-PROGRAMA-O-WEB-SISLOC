@@ -6,13 +6,16 @@
 CREATE TABLE Produto (
   codigo INT PRIMARY KEY,
   nome VARCHAR(20) NOT NULL UNIQUE,
-  valor DECIMAL(10, 2) NOT NULL
+  valor DECIMAL(*, 2) NOT NULL
 );
 
 CREATE TABLE ProdutoDesconto (
     codigo INT NOT NULL,
     quantidade INT NOT NULL,
-    valor DECIMAL(10, 2) NOT NULL,
+    valor DECIMAL(*, 2) NOT NULL,
     PRIMARY KEY (codigo, quantidade),
     FOREIGN KEY (codigo) REFERENCES Produto(codigo) ON DELETE CASCADE
 );
+
+--Resposta:
+--

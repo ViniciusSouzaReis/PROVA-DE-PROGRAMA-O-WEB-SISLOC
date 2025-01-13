@@ -34,5 +34,5 @@ function calculateSalesPrice(boxes: number): number {
 
 
 // RESPOSTA
-// Minha abordagem a essa questão criar uma função onde qualquer condição de quantidade de caixas vendidas pode ser facilmente alterada, sem a necessidade de alterar a lógica da função.
+// Minha abordagem a essa questão foi criar uma função onde qualquer condição de quantidade de caixas vendidas pode ser facilmente alterada, sem a necessidade de alterar a lógica da função.
 // Isso é possível pois a função é reutilizável, ou seja, as condições podem ser alteradas em um arquivo .env, por exemplo, e a função continuará funcionando normalmente independente da quantidade de caixas e valores.

@@ -2,7 +2,7 @@
 // recebendo como parâmetro o código do produto, a quantidade mínima para a faixa de preço e
 // o valor a ser aplicado. (1 PONTO)
 
-async function insertProdutoDesconto(
+async function insertProductDiscount(
   code: number,
   quantity: number,
   value: number
