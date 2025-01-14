@@ -22,3 +22,9 @@ async function insertProduct(name: string, value: number): Promise<number | null
     return null;
   }
 }
+
+// Resposta:
+// O uso de placeholders (?) evita ataques de injeção de SQL, garantindo que os dados fornecidos sejam tratados como valores, não como parte da query.
+// Foi incluído um bloco try...catch para capturar e tratar erros que possam ocorrer durante a execução da query.
+// Em caso de falha, a função retorna null e exibe uma mensagem de erro no console, garantindo previsibilidade no comportamento.
+// O retorno da função é o código do produto recém-criado, conforme solicitado no enunciado.

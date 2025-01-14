@@ -4,13 +4,13 @@
 --(1 PONTO)
 
 CREATE TABLE Produto (
-  codigo INT PRIMARY KEY,
+  codigo UUID PRIMARY KEY,
   nome VARCHAR(20) NOT NULL UNIQUE,
   valor DECIMAL(*, 2) NOT NULL
 );
 
 CREATE TABLE ProdutoDesconto (
-  codigo INT NOT NULL,
+  codigo UUID NOT NULL,
   quantidade INT NOT NULL,
   valor DECIMAL(*, 2) NOT NULL,
   PRIMARY KEY (codigo, quantidade),
@@ -18,4 +18,6 @@ CREATE TABLE ProdutoDesconto (
 );
 
 --Resposta:
---
+-- A relação entre Produto e ProdutoDesconto está claramente definida pela chave estrangeira, garantindo que todos os descontos estejam associados a produtos existentes.
+-- Restrições como NOT NULL, UNIQUE e chaves compostas ajudam a prevenir dados inválidos ou redundantes.
+-- A chave primária composta permite definir múltiplos descontos para diferentes quantidades do mesmo produto.

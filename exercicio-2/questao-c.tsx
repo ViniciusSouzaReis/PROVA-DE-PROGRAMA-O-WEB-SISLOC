@@ -23,3 +23,5 @@ async function insertProductDiscount(
   }
 }
 
+// Resposta:
+// A função encapsula toda a lógica de inserção na tabela, mantendo o código limpo e reutilizável.

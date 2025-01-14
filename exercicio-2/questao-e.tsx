@@ -59,3 +59,7 @@ async function calculateTotalPrice(productCode: number, quantity: number): Promi
     return null;
   }
 }
+
+// Resposta:
+// O algoritmo considera múltiplas faixas de desconto, permitindo que o modelo atenda cenários com diferentes regras.
+// Ordenar os descontos por quantidade DESC permite aplicar o desconto mais vantajoso de forma direta.
